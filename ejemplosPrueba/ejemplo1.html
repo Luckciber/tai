@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="usuario">  
+    <button type="button" id="validar" onclick="validar_usuario()">Validar</button>  
+</body>
+</html>
+<script>
+    var usuario_local = "admin";
+
+    var usuario = document.getElementById('usuario').value;
+
+    function validar_usuario(){
+        if(document.getElementById('usuario').value == usuario_local){
+            alert("Usuario: "+usuario);
+        }
+    }
+
+    /*
+    document.getElementById('validar').addEventListener('click',function(){
+        if(document.getElementById('usuario').value == usuario_local){
+            alert("Usuario: "+usuario);
+        }
+    } );
+*/
+/*
+    document.getElementById('usuario').addEventListener('keyup',function(){
+        if(document.getElementById('usuario').value == usuario_local){
+            alert("Usuario: "+usuario);
+        }
+    } );
+*/
+
+/*
+    if(document.getElementById('usuario').value == usuario_local){
+        alert("Usuario: "+usuario);
+    }else{
+        alert(document.getElementById('usuario').value);
+    }
+        */
+
+</script>
